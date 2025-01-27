@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(233, 112, 180);
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .similarArtists{
+    color: white;
+    text-align: center;
+    background-color: rgb(77, 87, 100);
+  }
+
+  /*make this into something else for YT stuff*/
+  .mailingList{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(115, 255, 0);
+  }
+
+  .faveSongDiv{
+    color: rgb(132, 77, 77);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+  }
