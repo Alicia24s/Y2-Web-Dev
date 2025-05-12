@@ -1,32 +1,36 @@
 <html>
     <head>
-
         <title>Alicia</title>
         <meta data-rh="true" name="theme-color" content="#FFFFFF">
         <link rel="stylesheet" href="style.css">
         <script> src="script.js"</script>
-        
-        <nav>
-            <center>
-                <ul>
-                 
-                    <li><a href="OtherHTMLS/news.html"> News </a></li>
-                    <li><a href="OtherHTMLS/photos.html"> Photos </a></li>
-                    <li><a href="OtherHTMLS/similarArtists.html"> similarArtists </a></li>
-                    <li><a href="OtherHTMLS/careerTimeline.html"> careerTimeline </a></li>
-
-                </ul>
-            </center>
-        </nav>
     </head>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-container">
+                <!-- Left: Home link with icon -->
+                <div class="nav-left">
+                    <a href="index.html" class="home-link">
+                        <img src="IMAGES/Namea.png" class="home-icon"> 
+                    </a>
+                </div>
+    
+                <!-- Right: Other page links -->
+                <div class="nav-right">
+                    <a href="OtherHTMLS/news.html">News</a>
+                    <a href="OtherHTMLS/photos.html">Photos</a>
+                    <a href="OtherHTMLS/similarArtists.html">Similar Artists</a>
+                    <a href="OtherHTMLS/careerTimeline.html">Career Timeline</a>
+                </div>
+            </div>
+        </nav>
     <div class="bg-image"> </div>
     <div class="overImage">
          <!--Sections group related content thematically-->
          <section>
-            <h1 id="header">Alicia The Adult</h1>
-            <p id="paragraph">My Name is Alicia and i'm a millionare. Yh im serious.</p>
-            <p id="paragraph">The balance is pending though - it should be sorted soon.</p>
-            <button id="myBtn">Click Here</button>
+            <h1 id="header">This is a Fan Page for Alex Jean</h1>
+            <p id="paragraph">- Up and coming Christian Artist.</p>
             </section>
         
             <!--Articles hold self contained standalone side content-->
@@ -39,30 +43,7 @@
             <aside>
                 <h1>Fries (get it because im an "aside")</h1>
             </aside>
-        
-            <!--Creates a TABLE-->
-            <table>
-                <h1>TABLE BELOW</h1>
-                <tr>
-                    <th>Album</th>
-                    <th>Name</th>
-                    <th>Personal ranking</th>
-                </tr>
-                <tr>
-                    <td>Year release</td>
-                    <td>HII</td>
-                </tr>
-                
-            </table>
-            <!--Use this to create your mailing list-->
-            <div class="mailingList">
-                <h2> Join our mailing list </h2>
-                    <li>PLACEHOLDER</li>
-        
-                <img src="IMAGES\WOMAN-HAD-ENOUGH.jpg" alt="woman has had enough" width="500"/>
-            </div>
-            
-            
+
             <!--Similar artists (you'll use this to find similar videos)-->
             <div class="similarArtists">
             <h2> SIMILAR ARTISTS</h2>
@@ -71,24 +52,26 @@
         
             <!--Use this to import a transcript of a song - it will generate what it thinkgs about you)
             you can change this to the kind of thing you -->
-        
-            <div class="faveSongDiv">
-                <h1>hwelfsfsd</h1>
-            </div>
 
     </div>     
     <!--Footer-->
     <footer>
-        <div id = "copywrite">
+        <div id = "copyright" >
         <p>&copy; 2025 - My first website</p>
         </div>
-        
-        <div class = "links">
-        <ul>
-            <li><a href "contact.html"> Home </a></li>
-            <li><a href "privacy.html"> News </a></li>
+            <div class="mailingList">
+            <h2> Join our mailing list </h2> 
+            <form id="signupForm">
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+                <p id="responseMessage"></p>
+              </form>
+            </div>
+            
+        <ul class = "links" >
+            <li><a href "contact.html"> Content </a></li>
+            <li><a href "privacy.html"> Privacy </a></li>
         </ul>
-        </div>
     </footer>
 
 
