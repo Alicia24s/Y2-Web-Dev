@@ -1,11 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Alicia</title>
         <meta data-rh="true" name="theme-color" content="#FFFFFF">
         <link rel="stylesheet" href="style.css">
-        <script> src="script.js"</script>
     </head>
-
+    <body>
+        <div class="bg-blank-image"></div>
+        <script src="script.js"></script>
+     
         <!-- Navigation Bar -->
         <nav>
             <div class="nav-container">
@@ -18,63 +21,95 @@
     
                 <!-- Right: Other page links -->
                 <div class="nav-right">
-                    <a href="OtherHTMLS/news.html">News</a>
-                    <a href="OtherHTMLS/photos.html">Photos</a>
-                    <a href="OtherHTMLS/similarArtists.html">Similar Artists</a>
-                    <a href="OtherHTMLS/careerTimeline.html">Career Timeline</a>
+                    <a href="news.html">News</a>
+                    <a href="photos.html">Photos</a>
+                    <a href="similarArtists.html">Similar Artists</a>
+                    <a href="careerTimeline.html">Career Timeline</a>
                 </div>
             </div>
-        </nav>
-    <div class="bg-image"> </div>
-    <div class="overImage">
-         <!--Sections group related content thematically-->
-         <section>
-            <h1 id="header">Alicia The Adult</h1>
-            <p id="paragraph">My Name is Alicia and i'm a millionare. Yh im serious.</p>
-            <p id="paragraph">The balance is pending though - it should be sorted soon.</p>
-            <button id="myBtn">Click Here</button>
+        </nav>         
+        <main>
+            <div class="similarArtists">
+            <section class="mailing-list">
+                <h2>Join Our Mailing List</h2>
+                <form id="signupForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <button type="submit">Subscribe</button>
+                    <p id="responseMessage"></p>
+                </form>
+                </section>
+                
+            
+
+            <section>
+                <h1 id="header">Alicia The Adult</h1>
+                <p id="paragraph">My Name is Alicia and I'm a millionaire. Yeah, I'm serious.</p>
+                <p id="paragraph">The balance is pending though - it should be sorted soon.</p>
+                <button id="myBtn">Click Here</button>
             </section>
-        
-            <!--Articles hold self contained standalone side content-->
+    
+            <!--Articles hold self-contained standalone side content-->
             <article>
-                <h1> Kwan Kwan Kwan - Breaking news</h1>
+                <h1>Kwan Kwan Kwan - Breaking news</h1>
             </article>
-        
-        
+    
             <!--Related but secondary content -->
             <aside>
-                <h1>Fries (get it because im an "aside")</h1>
+                <h1>Fries (get it because I'm an "aside")</h1>
             </aside>
-
-            <!--Similar artists (you'll use this to find similar videos)-->
-            <div class="similarArtists">
-            <h2> SIMILAR ARTISTS</h2>
-                <li>Chinese: Ni Hao</li>
-            </div>
-        
-            <!--Use this to import a transcript of a song - it will generate what it thinkgs about you)
-            you can change this to the kind of thing you -->
-
-    </div>     
-    <!--Footer-->
-    <footer>
-        <div id = "copyright" >
-        <p>&copy; 2025 - My first website</p>
+    
+            <h2>SIMILAR ARTISTS</h2>
+            <li>Chinese: Ni Hao</li>
         </div>
-            <div class="mailingList">
-            <h2> Join our mailing list </h2> 
-            <form id="signupForm">
-                <input type="email" id="email" placeholder="Your Email" required>
-                <button type="submit">Subscribe</button>
-                <p id="responseMessage"></p>
-              </form>
-            </div>
+        <div class="newStuff">
+            <section class="mailing-list">
+                <h2>Join Our Mailing List</h2>
+                <form id="signupForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <button type="submit">Subscribe</button>
+                    <p id="responseMessage"></p>
+                </form>
+                </section>
+                
             
-        <ul class = "links" >
-            <li><a href "contact.html"> Content </a></li>
-            <li><a href "privacy.html"> Privacy </a></li>
-        </ul>
-    </footer>
 
-
+            <section>
+                <h1 id="header">Alicia The Adult</h1>
+                <p id="paragraph">My Name is Alicia and I'm a millionaire. Yeah, I'm serious.</p>
+                <p id="paragraph">The balance is pending though - it should be sorted soon.</p>
+                <button id="myBtn">Click Here</button>
+            </section>
+    
+            <!--Articles hold self-contained standalone side content-->
+            <article>
+                <h1>Kwan Kwan Kwan - Breaking news</h1>
+            </article>
+    
+            <!--Related but secondary content -->
+            <aside>
+                <h1>Fries (get it because I'm an "aside")</h1>
+            </aside>
+    
+            <h2>SIMILAR ARTISTS</h2>
+            <li>Chinese: Ni Hao</li>
+            <section>
+                
+            <ul class = "links" >
+                <li><a href="contact.html"> Content </a></li>
+                <li><a href="privacy.html"> Privacy </a></li>
+            </ul>
+            <section id = "copyright" >
+                <p>&copy; 2025 - My first website</p> 
+            </section>
+            </section>
+        </div>
+        
+           
+            
+        </main>
+        <div class="bg-image"></div>
+  
+    </body>  
 </html>

@@ -1,16 +1,17 @@
+
+.bg-blank-image {
+  background-color: rgb(216, 183, 183);
+}
 .bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
+  position:sticky;
+  height: 100ch;
+  width: 100%;
   background-image: url("../IMAGES/Background.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   filter: blur(5px);
   z-index: -1;
-  pointer-events: none; /* So it doesn't block clicks */
 }
 
 
@@ -18,20 +19,6 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.overImage {
-  background-color: rgba(11, 0, 0, 0.4);
-  color: rgb(255, 252, 252);
-  font-weight: bold;
-  border: 0px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
 
 a {
   color: white;
@@ -58,11 +45,14 @@ nav li {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
   z-index: 1000;
   background-color: rgba(100, 100, 100, 0.6);
-
   padding: 15px 20px;
 }
 
@@ -72,14 +62,7 @@ nav {
   align-items: center;
 }
 
-.nav-left .home-link {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 56px;
-}
+
 
 .nav-right a {
   color: white;
@@ -95,15 +78,6 @@ nav {
   margin-right: 8px;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  font-size: 20px;
-}
-
 .links {
   margin: auto;
   text-align: center;
@@ -112,9 +86,74 @@ p {
 }
 
 .similarArtists {
-  color: white;
+  background-color: rgba(11, 0, 0, 0.4);
+  color: rgb(255, 252, 252);
+  font-weight: bold;
+  border: 0px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
   text-align: center;
-  background-color: rgb(77, 87, 100);
+}
+
+.similarArtists {
+  background-color: rgba(11, 0, 0, 0.4);
+  color: rgb(255, 252, 252);
+  font-weight: bold;
+  border: 0px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  -o-transform: translate(-50%, -40%);
+}
+.newStuff {
+  background-color: rgba(11, 0, 0, 0.4);
+  color: rgb(255, 252, 252);
+  font-weight: bold;
+  border: 0px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, 90%);
+  -moz-transform: translate(-50%, 120%);
+  -ms-transform: translate(-50%, 120%);
+  -o-transform: translate(-50%, 120%);
+}
+
+.newStuff2 {
+  background-color: rgba(11, 0, 0, 0.4);
+  color: rgb(255, 252, 252);
+  font-weight: bold;
+  border: 0px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 190%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, 190%);
+  -moz-transform: translate(-50%, 190%);
+  -ms-transform: translate(-50%, 190%);
+  -o-transform: translate(-50%, 190%);
 }
 
 .mailingList {

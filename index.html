@@ -21,13 +21,26 @@
     
                 <!-- Right: Other page links -->
                 <div class="nav-right">
-                    <a href="OtherHTMLS/news.html">News</a>
-                    <a href="OtherHTMLS/photos.html">Photos</a>
-                    <a href="OtherHTMLS/similarArtists.html">Similar Artists</a>
-                    <a href="OtherHTMLS/careerTimeline.html">Career Timeline</a>
+                    <a href="news.html">News</a>
+                    <a href="similarArtists.html">Similar Artists</a>
+                    <a href="careerTimeline.html">Career Timeline</a>
                 </div>
             </div>
-        </nav>           <!--Sections group related content thematically-->
+        </nav>         
+        <main>
+            <div class="similarArtists">
+            <section class="mailing-list">
+                <h2>Join Our Mailing List</h2>
+                <form id="signupForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <button type="submit">Subscribe</button>
+                    <p id="responseMessage"></p>
+                </form>
+                </section>
+                
+            
+
             <section>
                 <h1 id="header">Alicia The Adult</h1>
                 <p id="paragraph">My Name is Alicia and I'm a millionaire. Yeah, I'm serious.</p>
@@ -45,33 +58,70 @@
                 <h1>Fries (get it because I'm an "aside")</h1>
             </aside>
     
-            <!--Similar artists (you'll use this to find similar videos)-->
-            <div class="similarArtists">
-                <h2>SIMILAR ARTISTS</h2>
-                <li>Chinese: Ni Hao</li>
-            </div>
+            <h2>SIMILAR ARTISTS</h2>
+            <li>Chinese: Ni Hao</li>
+        </div>
+        <div class="newStuff">
 
+            <section>
+                <h1 id="header">Alicia The Adult</h1>
+                <p id="paragraph">My Name is Alicia and I'm a millionaire. Yeah, I'm serious.</p>
+                <p id="paragraph">The balance is pending though - it should be sorted soon.</p>
+                <button id="myBtn">Click Here</button>
+            </section>
+    
+            <!--Articles hold self-contained standalone side content-->
+            <article>
+                <h1>Kwan Kwan Kwan - Breaking news</h1>
+            </article>
+    
+            <!--Related but secondary content -->
+            <aside>
+                <h1>Fries (get it because I'm an "aside")</h1>
+            </aside>
+    
+            <h2>SIMILAR ARTISTS</h2>
+            <li>Chinese: Ni Hao</li>
+            <section>
+        </div>
         
+        <div class="newStuff2">
+
+            <section>
+                <h1 id="header">Alicia The Adult</h1>
+                <p id="paragraph">My Name is Alicia and I'm a millionaire. Yeah, I'm serious.</p>
+                <p id="paragraph">The balance is pending though - it should be sorted soon.</p>
+                <button id="myBtn">Click Here</button>
+            </section>
     
-    </body>
+            <!--Articles hold self-contained standalone side content-->
+            <article>
+                <h1>Kwan Kwan Kwan - Breaking news</h1>
+            </article>
     
-   <footer>
+            <!--Related but secondary content -->
+            <aside>
+                <h1>Fries (get it because I'm an "aside")</h1>
+            </aside>
     
-    <section class="mailing-list">
-    <h2>Join Our Mailing List</h2>
-    <form id="signupForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <button type="submit">Subscribe</button>
-      <p id="responseMessage"></p>
-    </form>
-  </section>
-  <section id = "copyright" >
-    <p>&copy; 2025 - My first website</p> 
-</section>
-<ul class = "links" >
-    <li><a href="contact.html"> Content </a></li>
-    <li><a href="privacy.html"> Privacy </a></li>
-</ul>
-</footer>
+            <h2>SIMILAR ARTISTS</h2>
+            <li>Chinese: Ni Hao</li>
+            
+        </div>
+            
+        </main>
+        <div class="bg-image"></div>
+        <footer>
+            <p>&copy; 2025 - My first website</p> 
+            <section>
+                
+            
+                <section id = "copyright" >
+                    <a href="contact.html"> Content </a>
+                    <a href="privacy.html"> Privacy </a> 
+                    <p>&copy; 2025 - My first website</p> 
+                </section>
+                </section>
+            </footer>
+    </body>  
 </html>
