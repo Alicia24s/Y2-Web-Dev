@@ -1,21 +1,26 @@
-  .bg-image{
-    background-image: url("../IMAGES/Background.jpg");
-    height: 100%;
-    width: 100%;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    background-position: center;
-    background-size: cover;
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../IMAGES/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+  pointer-events: none; /* So it doesn't block clicks */
 }
 
-body{
-  background-color: rgb(0,0,0);
+
+body {
+  background-color: rgb(0, 0, 0);
 }
 
-
-.overImage{
-  /*Fallbackcolor*/background-color: rgba(0,0,0, 0.4);
-  /*Black/opacity/see-through*/color: rgb(255, 252, 252);
+.overImage {
+  background-color: rgba(11, 0, 0, 0.4);
+  color: rgb(255, 252, 252);
   font-weight: bold;
   border: 0px solid #f1f1f1;
   position: absolute;
@@ -26,133 +31,100 @@ body{
   width: 80%;
   padding: 20px;
   text-align: center;
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
 }
 
-/* General link style */
 a {
   color: white;
-  /*Whitetext*/text-decoration: none;
-  /*Removeunderline*/font-family: Arial, sans-serif;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   padding: 4px 2px;
   border-radius: 4px;
   transition: all 0.3s ease;
-      /* Smooth hover effect */:;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
 }
 
-/* On hover */
 a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Light hover background */
-  text-decoration: underline;                /* Optional: subtle underline */
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
   color: #f0f0f0;
 }
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 50px;
+  margin: auto;
+  border-radius: 5px;
+}
+
 nav {
   position: sticky;
-  background-color: rgba(100, 100, 100, 0.6); /* transparent grey */
-  padding: 10px;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(100, 100, 100, 0.6);
+
+  padding: 15px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left .home-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 56px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.home-icon {
+  width: 100px;
+  height: 70px;
+  margin-right: 8px;
+}
+
+h1 {
+  color: white;
   text-align: center;
 }
-  nav li {
-    display:-webkit-inline-box;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom:10px;
-    margin: auto;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    
-  }
 
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(100, 100, 100, 0.6);
-    backdrop-filter: blur(5px);
-    padding: 15px 20px;
-  }
-  
-  /* Container for nav items */
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Home link */
-  .nav-left .home-link {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 56px;
-  }
-  
-  .home-icon {
-    width: 100px;
-    height: 70px;
-    margin-right: 8px;
-  }
-  
-  /* Right-side nav links */
-  .nav-right a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 20px;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+p {
+  font-size: 20px;
 }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
 
-  .links {
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-  }
+.links {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+}
 
-  .similarArtists{
-    color: white;
-    text-align: center;
-    background-color: rgb(77, 87, 100);
-  }
+.similarArtists {
+  color: white;
+  text-align: center;
+  background-color: rgb(77, 87, 100);
+}
 
-  /*make this into something else for YT stuff*/
-  .mailingList{
-    color: rgb(255, 231, 231);
-    text-align: center;
-    background-color: rgb(51, 0, 0);
-  }
+.mailingList {
+  color: rgb(255, 231, 231);
+  text-align: center;
+  background-color: rgb(51, 0, 0);
+}
 
-  .faveSongDiv{
-    color: rgb(132, 77, 77);
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-  }
+.faveSongDiv {
+  color: rgb(132, 77, 77);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
