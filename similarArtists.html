@@ -1,25 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>YOUTUBER</title>
+        <title>Alicia</title>
+        <meta data-rh="true" name="theme-color" content="#FFFFFF">
         <link rel="stylesheet" href="style.css">
     </head>
-    <section>
-        <h1>YOUTUBER NAME PLACE HOLDER</h1>
-        <p>My Name is Alicia and i'm a millionare.</p>
-        <p>The balance is pending though - it should be sorted soon.</p>
-    </section>
-                <!--Creates a TABLE-->
-                <table>
-                    <h1>TABLE BELOW</h1>
-                    <tr>
-                        <th>Album</th>
-                        <th>Name</th>
-                        <th>Personal ranking</th>
-                    </tr>
-                    <tr>
-                        <td>Year release</td>
-                        <td>HII</td>
-                    </tr>
-                    
-                </table>
+    <body>
+        <div class="bg-blank-image"></div>
+        <script src="script.js"></script>
+     
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-container">
+                <!-- Left: Home link with icon -->
+                <div class="nav-left">
+                    <a href="index.html" class="home-link">
+                        <img src="IMAGES/Namea.png" class="home-icon"> 
+                    </a>
+                </div>
+                <h2 class = >Similar Artists</h2>
+            </div>
+            <section class="mailingList">
+                <h2 class = >Sign up for our Mailing List</h2>
+                <form id="signupForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <button type="submit">Subscribe</button>
+                    <p id="responseMessage"></p>
+                </form>
+            </section>
+        </nav>         
+        <main>
+            <div class="otherPages">
+
+                <article class="info-article">
+                    <div class="article-content">
+                        <img src="IMAGES\ArtistsOther\hulvey.png" alt="Hulvey">
+                        <div>
+                            <h2>Hulvey</h2>
+                            <p>
+                                Has a completely different sound but has collabed with Alex Jean
+                                on a couple songs. He is a Christian rapper and has been in the game for a while.
+                            </p>
+    
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="info-article reverse">
+                    <div class="article-content">
+                        <img src="IMAGES\ArtistsOther\torey.png" alt="Torey">
+                        <div class="text-block">
+                            <h2>Tory Deshaun</h2>
+                            <p>
+                                Also a Christian rapper, he has a voice and sound similar to Alex Jean.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="info-article">
+                    <div class="article-content">
+                        <img src="IMAGES\ArtistsOther\caleb.png" alt="Caleb Gordon">
+                        <div class="text-block">
+                            <h2>Caleb Gordon</h2>
+                            <p>
+                                One of the most popular Christian rappers.
+                            </p>
+    
+                        </div>
+                    </div>
+                </article>
+    
+            </div>
+    
+        </main>
+        
+        <footer>
+            <section>
+                <section id = "copyright" >
+                    <a href="contact.html"> Content </a>
+                    <a href="privacy.html"> Privacy </a> 
+                    <p class="white">&copy; 2025 - My first website</p> 
+                </section>
+            </section>
+        </footer>
+    </body>  
 </html>

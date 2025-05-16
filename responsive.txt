@@ -1,0 +1,4 @@
+I put in multiple pages with different themes.
+I put in the Javascript that connects to the API.
+I tried to have the home page have a core background and the other pages have
+a uniform strue.
