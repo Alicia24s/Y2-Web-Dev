@@ -1,4 +1,23 @@
+Things I did:
+
+
 I put in multiple pages with different themes.
+
 I put in the Javascript that connects to the API.
+
 I tried to have the home page have a core background and the other pages have
-a uniform strue.
+a uniform structure but different pictures.
+
+I made sure that the Nav is stuck to the screen so that when you scroll it doesn't disappear and 
+also took the time to change the Nav bar and the footer depending on which page you're on so that 
+the user doesn't have links to the page they're on.
+
+I also put in a 'flex' command in css so that the areas of my article can reverse. This was myfavorite thing
+to put in because before, when everything was on the same side, everything looked too uniform and this made it less boring.
+
+I made a custom image for the home button on the nav in the top left and put the mail list on there so 
+that on any given page the user can still sign up.
+
+Whilst there are areas of improvement, It generally has the functionalities needed for an okay website. This isn't 
+a very popular artist so it was hard to find reams of information about them.
+

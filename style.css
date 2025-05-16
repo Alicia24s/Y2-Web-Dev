@@ -1,9 +1,4 @@
-/* Mobile (default) */
-body {
-  font-size: 16px;
-}
 
-/* Tablets */
 @media (min-width: 600px) {
   body {
     font-size: 18px;
@@ -11,24 +6,28 @@ body {
 
   .nav-right {
     display: flex;
-    gap: 1rem;
   }
 
+  img {
+    width: 50%;
+    height: 50%;
+  }
   .similarArtists, .newStuff {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    width: 25%;
+    padding: 15px;
   }
 }
-
-/* Desktops */
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
   }
-
+  img {
+    width: 10%;
+    height: 10%;
+  }
   .similarArtists, .newStuff {
-    grid-template-columns: repeat(3, 1fr);
+    width: 45%;
+  padding: 15px;
   }
 }
 
@@ -54,7 +53,6 @@ body {
   background-repeat: repeat;
   filter: blur(6px);
   z-index: -1;
-  -webkit-filter: blur(6px);
 }
 
 .textForTopSongs {
@@ -94,7 +92,6 @@ color: #666;
 margin-top: 10px;
 }
 
-/* Alternate reverse layout */
 .info-article.reverse .article-content {
 flex-direction: row-reverse;
 }
@@ -107,12 +104,10 @@ body {
 }
 a {
   color: white;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   font-size: 25px;
   padding: 4px 2px;
   border-radius: 4px;
-  transition: all 0.3s ease;
 }
 
 a:hover {
@@ -121,8 +116,6 @@ a:hover {
   color: #f0f0f0;
 }
 
-
-
 nav {
   position: fixed;
   top: 0;
@@ -130,31 +123,21 @@ nav {
   width: 100%;
   height: 100px;
   display: flex;
-  z-index: 1000;
+  z-index: 10000;
   background-color: rgba(100, 100, 100, 0.6);
   padding: 15px 20px;
 }
 
-.nav-container {
+.nav-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-
-.nav-ma {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 
 .nav-right a {
   color: white;
-  text-decoration: none;
   margin-left: 20px;
   font-size: 20px;
-  transition: 0.3s;
 }
 
 .home-icon {
@@ -178,8 +161,7 @@ nav {
   padding-top: 20px;
 }
 
-.mailingList input,
-.mailingList button {
+.mailingList input, .mailingList button {
   padding: 0px;
   font-size: 14px;
   margin: 2px 0;
@@ -187,8 +169,10 @@ nav {
 }
 
 .mailingList h2 {
-  font-size: 16px;
+  font-size: 26px;
   margin: 0;
+  padding: 0;
+  color: white;
 }
 
 .overview {
@@ -224,8 +208,8 @@ nav {
 
 
 .otherPages {
-  width: 80%;
-  padding: 20px;
+  width: 75%;
+  padding: 25px;
   text-align:left;
   text-align: center;
   transform: translate(-50%, -30%);
@@ -237,8 +221,4 @@ nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -30%);
-  -moz-transform: translate(-50%, -30%);
-  -ms-transform: translate(-50%, -30%);
-  -o-transform: translate(-50%, -30%);
 }

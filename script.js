@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const signupForm = document.getElementById('signupForm');
+  const form = document.getElementById('signupForm');
   const responseMessage = document.getElementById('responseMessage');
 
-  signupForm.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
 
-    //This if statement checks if the name and email are empty
+    //Checks if everything the user enters is valid
     if (!name || !email || !email.includes('@')) {
-      responseMessage.textContent = 'Please enter a valid name and or email.';
+      responseMessage.textContent = 'Please enter a valid name and email.';
       responseMessage.style.color = 'red';
       return;
     }
-
     const res = await fetch('https://mudfoot.doc.stu.mmu.ac.uk/ash/api/mailinglist', {
       method: 'POST',
       headers: {
@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       body: JSON.stringify({ name, email }),
     });
-
     const result = await res.json();
-  // Checks if the response is ok then says error if anything is wrong with it)
+
     if (res.ok) {
+      //Prints all info that you get back from API
       responseMessage.textContent = result.message + ` (${result.data.name}, ${result.data.email})`;
       responseMessage.style.color = 'green';
-      signupForm.reset();
+      form.reset();
     } else {
       responseMessage.textContent = 'Error: ' + (result.message || 'Something went wrong');
       responseMessage.style.color = 'red';
